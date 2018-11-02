@@ -10,7 +10,7 @@
   <title>Restaurant Reviews</title>
 </head>
 
-<body onload = "init()">
+<body>
   <header>
     <nav>
       <h1><a tabindex="0">Restaurant Reviews</a></h1>
@@ -18,16 +18,16 @@
   </header>
 
   <main id="maincontent">
-    <section id="map-container" aria-label="Map" aria-hidden="true">
+    <section id="map-container" aria-label="Map application" aria-hidden="true">
       <div id="map" role="application" aria-hidden="true"></div>
     </section>
     <section>
       <div class="filter-options">
         <h2 tabindex="0">Filter Results</h2>
-        <select tabindex="0" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select tabindex="0" id="neighborhoods-select" aria-label="select neighborhoods" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all" role="heading" aria-level="2">All Neighborhoods</option>
         </select>
-        <select tabindex="0" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select tabindex="0" id="cuisines-select" aria-label="select cuisines" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
